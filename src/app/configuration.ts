@@ -1,0 +1,1 @@
+export const API_URL = 'http://tas.ddnsfree.com:40010';

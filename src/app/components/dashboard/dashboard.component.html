@@ -1,0 +1,12 @@
+<div class="content">
+  <md-card *ngFor="let project of projects">
+    <md-card-header>
+      <span md-card-title>
+        {{project.Title}}
+      </span>
+    </md-card-header>
+    <md-card-content>
+      {{project.Description}}
+    </md-card-content>
+  </md-card>
+</div>

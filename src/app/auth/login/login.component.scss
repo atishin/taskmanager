@@ -1,0 +1,42 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    min-width: 300px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.in-dialog {
+        .wrapper {
+            align-items: stretch;
+        }
+    }
+}
+
+
+
+md-card {
+    min-width: 400px;
+}
+
+[md-dialog-actions], [md-card-actions] {
+    display: flex;
+    justify-content: center;
+    
+    button {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+[md-dialog-title], [md-card-title] {
+    text-align: center;
+}

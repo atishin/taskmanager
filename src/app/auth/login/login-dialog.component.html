@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <h4 md-dialog-title>
+    Вход на сайт
+  </h4>
+  <div md-dialog-content>
+    <div class="input">
+      <md-input-container>
+        <input type="text" mdInput placeholder="E-mail" [(ngModel)]="model.login">
+      </md-input-container>
+    </div>
+    <div class="input">
+      <md-input-container>
+        <input type="password" mdInput placeholder="Пароль" [(ngModel)]="model.password">
+      </md-input-container>
+    </div>
+  </div>
+  <div md-dialog-actions>
+    <button md-button color="primary" (click)="signIn()">Войти</button>
+    <button md-button color="warn" (click)="cancel()">Отмена</button>
+  </div>
+</div>
+
